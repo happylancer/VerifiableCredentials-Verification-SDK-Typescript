@@ -6,7 +6,7 @@
   "types": "dist/lib/index.d.ts",
   "scripts": {
     "build": "tsc --p tsconfig.json",
-    "test": "nyc jasmine-ts --config=./tests/jasmine.json",
+    "test": "nyc --use-spawn-wrap jasmine-ts --config=./tests/jasmine.json",
     "lint": "tslint --fix --project . --config node_modules/ad-did-services-common/tslint.json"
   },
   "repository": {
